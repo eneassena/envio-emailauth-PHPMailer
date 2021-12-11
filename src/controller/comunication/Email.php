@@ -1,9 +1,11 @@
 <?php 
 
-namespace App\comunication;
+namespace App\Controller\Comunication;
 
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception as PHPMailerException;
+
 
 class Email {
     /**
@@ -21,8 +23,8 @@ class Email {
      * Dados do remetente
      * @var string
      */
-    const FROM_EMAIL = 'eneassilva94@gmai.com';
-    const FROM_NAME = 'Enéas Sivla';
+    const FROM_EMAIL = 'exemple@gmail.com';
+    const FROM_NAME = '(first name) (last name)';
 
     /**
      * error
@@ -104,10 +106,5 @@ class Email {
             $this->error = $e->getMessage();
             return false;
         }
-
     }
-
-
-
-
 }

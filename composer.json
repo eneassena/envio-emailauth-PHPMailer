@@ -1,9 +1,12 @@
 {
-    "name": "eneas200/phpmailer",
+    "name": "eneassena/phpmailer",
     "autoload": {
         "psr-4": {
-            "App\\": "app/"
-        }
+            "App\\": "src/"
+        },
+        "files": [
+            "src/config/config.php"
+        ]
     },
     "require": {
         "phpmailer/phpmailer": "^6.3"

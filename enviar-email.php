@@ -2,9 +2,10 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-use \App\comunication\Email;
+use App\Controller\Comunication\Email;
 
-$address        = ['eneassilva94@gmail.com'];
+
+$address        = ['destinatario@gmail.com'];
 $subject        = 'Teste email kkk';
 $body           = '<p>Iai mano usei seu email para testar envio de email com php kk falow :-)</p>';
 
